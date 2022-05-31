@@ -1,0 +1,49 @@
+# Explications
+
+### <u>Différence entre git et github</u>
+
+Git est l'outils utilisé pour gérer les différentes versions d'un projet, les conflits etc...
+
+Github est un site internet permettant de gérer avec une interface visuelle les différents projets git. Git n'est donc pas la même chose que Github.
+
+### <u>Branch master</u>
+
+Il s'agit de la partie principale d'un projet. Celle-ci doit toujours être fonctionnelle pour que tous les membres de l'équipe puisse avoir, à tout moment, un projet fonctionnel.
+
+### <u>Branch</u> 
+
+Cela va créer une branche qui partira d'un commit de la branch master afin de pouvoir travailler dans une branche dans laquelle on peut mettre du code non-fonctionnel sans perturber les personnes faisant un pull sur la branch master. Il est possible de récupérer à tout moment les nouvelles données de la branch master sur la nouvelle branch tout en continuant de travailler sur son développement. Le plus important ici est la notion de temporalité. 
+
+Une branche qui commence à un commit à l'instant T sera développée en parallèle de ce qu'il se passe dans le master. 
+
+# Commandes
+
+### <u>Gestion de base</u>
+
+<i>git init :</i>  Initialise un dossier pour qu'il puisse être traité comme un dossier lié à un projet git.
+
+<i>git add <Nom_fichier> :</i>  ajoute manuellement un fichier dans le repository git. Si le nom du fichier est ".", cela va ajouter tous les nouveaux fichiers.
+
+<i>git status :</i> Montre les différentes modifications sur la branche principale.
+
+<i>git commit -m "<Message_commit>" :</i> Fait un commit sur la branche sélectionnée
+
+
+
+### <u>Gestion de branche</u>
+
+<i>git checkout -b <nom_branche> :</i> Crée une branche portant le nom donné.
+
+<i>git checkout <nom_branche> :</i> Passe d'une branche à une autre.
+
+<i>git branch -d <Nom_branche> :</i> Supprime la branche. Elle ne doit pas être celle sur laquelle on travaille.
+
+<i>git merge <nom_branche> :</i> fusionne les deux branches.
+
+### <u>Gestion répertoire à distance</u>
+
+<i>git remote add origin <URL_projet github> :</i> Met les changements dans le cloud.
+
+<i>git config --global user.name "<_pseudo_>" :</i> Attribue un pseudonyme pour vos prochains changements dans ce projet
+
+<i>git config --global user.email "<_pseudo_>" :</i> Attribue une addresse mail pour vos prochains changements dans ce projet
